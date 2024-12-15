@@ -1,6 +1,6 @@
 *** Settings ***
-Resource    ../base.robot
-
+Resource    ../Utils/Resource.robot
+Variables   ../Locators/home_locators.yml
 
 *** Variables ***
 ${URL}    https://automationexercise.com/
@@ -11,7 +11,7 @@ ${CATEGORY_SECTION_TITLE}    id:accordian
 Abrindo URL https://automationexercise.com/
     Open Browser    ${URL}    Chrome
 Clicando no botao Signup - Login
-    Wait Until Element Is Visible    ${button_Signup-Login}
+    Wait Until Element Is Visible    ${HOME_BUTTON_SIGNUP-LOGIN}
     Click Element  ${button_Signup-Login}
 Validando que o usuario foi redirecionado para a página inicial
     Wait Until Element Is Visible    ${CATEGORY_SECTION_TITLE}

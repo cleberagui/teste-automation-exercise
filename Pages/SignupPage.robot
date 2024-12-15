@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../base.robot
+Resource    ../Utils/Resource.robot
 
 *** Variables ***
 ${Radio_MR}    id:id_gender1
